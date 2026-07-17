@@ -1,0 +1,17 @@
+---
+pagination:
+  data: collections.companies
+  size: 1
+  alias: company
+permalink: "/{{ company.slug }}/"
+layout: layouts/base.njk
+---
+<h1>{{ company.meta.name }}</h1>
+<p class="subtitle">{{ company.meta.badge }} · Quick revision — actual questions from assessments</p>
+
+{% for item in company.questions %}
+<div id="{{ item.data.id }}" class="question-label"{% if item.data.labelStyle %} style="{{ item.data.labelStyle }}"{% endif %}>{{ item.data.label }}</div>
+<h2>{{ item.data.title }}</h2>
+{{ item.templateContent | safe }}
+{% if not loop.last %}<hr class="divider">{% endif %}
+{% endfor %}

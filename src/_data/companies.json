@@ -1,0 +1,74 @@
+{
+  "visa": {
+    "name": "Visa",
+    "logoText": "V",
+    "logoBg": "#1a1f71",
+    "logoColor": "#fff",
+    "badge": "OA HackerRank",
+    "order": 0
+  },
+  "tiktok": {
+    "name": "TikTok",
+    "logoText": "TT",
+    "logoBg": "#000",
+    "logoColor": "#fff",
+    "badge": "Live Coding",
+    "order": 1
+  },
+  "foodpanda": {
+    "name": "FoodPanda",
+    "logoText": "FP",
+    "logoBg": "#d70f64",
+    "logoColor": "#fff",
+    "badge": "OA + Live Coding",
+    "order": 2
+  },
+  "rakuten": {
+    "name": "Rakuten",
+    "logoText": "R",
+    "logoBg": "#bf0000",
+    "logoColor": "#fff",
+    "badge": "OA Codility",
+    "order": 3
+  },
+  "viki": {
+    "name": "Rakuten Viki",
+    "logoText": "RV",
+    "logoBg": "#bf0000",
+    "logoColor": "#fff",
+    "badge": "Live Coding",
+    "order": 4
+  },
+  "bytedance": {
+    "name": "ByteDance",
+    "logoText": "BD",
+    "logoBg": "#161823",
+    "logoColor": "#fe2c55",
+    "badge": "Live Coding",
+    "order": 5
+  },
+  "shopee": {
+    "name": "Shopee",
+    "logoText": "S",
+    "logoBg": "#ee4d2d",
+    "logoColor": "#fff",
+    "badge": "Live Coding",
+    "order": 6
+  },
+  "okx": {
+    "name": "OKX",
+    "logoText": "OKX",
+    "logoBg": "#000",
+    "logoColor": "#fff",
+    "badge": "Live Coding",
+    "order": 7
+  },
+  "reolink": {
+    "name": "Reolink",
+    "logoText": "RL",
+    "logoBg": "#003f7f",
+    "logoColor": "#fff",
+    "badge": "Hiring Manager",
+    "order": 8
+  }
+}

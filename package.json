@@ -1,0 +1,17 @@
+{
+  "name": "interview-prep",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Interview questions reference site, by company.",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "migrate": "node scripts/migrate.js"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+    "cheerio": "^1.0.0",
+    "markdown-it-container": "^4.0.0"
+  }
+}

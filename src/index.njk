@@ -1,0 +1,13 @@
+---
+layout: layouts/base.njk
+permalink: "/"
+---
+<h1>Interview Questions</h1>
+<p class="subtitle">Quick revision — actual questions from real assessments, by company.</p>
+
+{% for c in collections.companies %}
+<div class="card">
+  <div class="card-title insight"><a href="{{ ('/' + c.slug + '/') | url }}" class="highlight">{{ c.meta.name }}</a></div>
+  <p>{{ c.meta.badge }} — {{ c.questions.length }} question{{ "s" if c.questions.length != 1 }}</p>
+</div>
+{% endfor %}

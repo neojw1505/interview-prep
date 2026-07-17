@@ -1,0 +1,33 @@
+<nav class="sidebar">
+  <div class="sidebar-title">Companies</div>
+
+  <div class="search-wrap">
+    <input type="text" id="searchBox" class="search-box" placeholder="Search questions..." autocomplete="off">
+    <span class="search-kbd" id="searchKbd">⌘K</span>
+    <div class="search-results" id="searchResults"></div>
+  </div>
+
+  <div class="progress-summary" id="progressSummary"></div>
+
+  {% for c in collections.companies %}
+  {% set isActive = company and company.slug == c.slug %}
+  <div class="company-group">
+    <div class="company-name{% if isActive %} active{% endif %}{% if not isActive %} collapsed{% endif %}" onclick="toggleCompany(this)">
+      <span class="company-logo" style="background:{{ c.meta.logoBg }}; color:{{ c.meta.logoColor }};">{{ c.meta.logoText }}</span>
+      {{ c.meta.name }} <span class="company-badge">{{ c.meta.badge }}</span>
+      <span class="company-chevron">▼</span>
+    </div>
+    <div class="company-links{% if not isActive %} collapsed{% endif %}">
+      {% for item in c.questions %}
+      <a href="{{ ('/' + c.slug + '/#' + item.data.id) | url }}" class="question-link">{{ item.data.navLabel }}</a>
+      {% endfor %}
+    </div>
+  </div>
+  {% endfor %}
+
+  <hr class="sidebar-divider">
+
+  <div class="sidebar-footer">
+    <p>More companies added as you do more assessments</p>
+  </div>
+</nav>
